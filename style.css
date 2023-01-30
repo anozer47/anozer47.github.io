@@ -71,3 +71,19 @@ section {
     text-align: right;
     margin-right:  10%;
 }
+.products {
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid rgb(255, 0, 0);
+}
+.prod-container {
+    background-color: #e0e0e0;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 1px solid rgb(0, 0, 0);
+    margin-bottom: 10px;
+}
