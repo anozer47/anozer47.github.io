@@ -6,6 +6,7 @@
     margin: 0;
 }
 .header {
+    display: flex;
     height: 160px;
     display: flex;
     color:black;
@@ -25,6 +26,8 @@
     text-align: right;
     margin-right: 10%;
     margin-top: 15px;
+    display: flex;
+    justify-content: center;
 }
 #nav li{
     font-weight: bold;
@@ -119,11 +122,17 @@ section {
 .products :hover {
     border: 1px solid black;
     border-radius: 5px;
-    background-color: rgb(210, 255, 240);
+    background-color: rgb(206, 255, 177);
 }
 .prod-container *:hover {
     border: 0px;
     border-radius: 0px;
 }
 .messengers {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+.messengers img{
+    margin-bottom: 10px;
 }
