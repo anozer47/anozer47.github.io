@@ -166,7 +166,7 @@ section {
 .products :hover {
     border: 1px solid black;
     border-radius: 5px;
-    background-color: rgb(206, 255, 177);
+    background-color: rgb(199, 255, 233);
 }
 .prod-container *:hover {
     border: 0px;
