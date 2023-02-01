@@ -11,7 +11,8 @@
     font-style: normal; 
     font-weight: normal;
     }
-.test {
+
+.worktime {
     font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
     font-size: 18px;
 }
@@ -25,7 +26,6 @@
     margin: 0;
 }
 .header {
-    display: flex;
     height: 160px;
     display: flex;
     color:black;
@@ -39,6 +39,18 @@
     width: 33.3333333%;
     text-align: center;
     margin-top: 15px;
+}
+.time{
+    line-height: 1.2;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    width: 160px;
+}
+.headertext span{
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+    font-weight: bold;
+    font-size: 17px;
 }
 .header-right {
     width: 33.3333333%;
@@ -160,6 +172,37 @@ section {
     border: 0px;
     border-radius: 0px;
 }
+#about .material-icons {
+    vertical-align: middle;
+    color: #813a00;
+}
+#advantages {
+    margin-left: auto;
+    margin-right: auto;
+    width: 560px;
+}
+#advantages .material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    color: rgb(7, 175, 35);
+    font-size: 45px;
+    vertical-align: middle;
+}
+#advantages li{
+    list-style-type: none;
+    margin-bottom: 15px;
+}
+#advantages ul{
+    list-style-type: none;
+    margin-top:  35px;
+    margin-bottom: 35px;
+}
+#advantages a{
+    font-size: 20px;
+    margin-left: 25px;
+    vertical-align: middle;
+}
+
 .messengers {
     display: flex;
     flex-direction: column;
@@ -167,4 +210,30 @@ section {
 }
 .messengers img{
     margin-bottom: 10px;
+}
+
+@media screen and (max-width: 920px){
+    .header {
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 5%;
+    }
+    .header-center,
+    .header-left,
+    .header-right {
+        height: auto;
+        width: auto;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    
+}
+@media screen and (max-width: 560px){
+    #advantages {
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+    }
 }
