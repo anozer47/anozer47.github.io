@@ -95,6 +95,21 @@ section {
     margin-right: 10%;
     margin-left: 10%
 }
+.section-about p{
+    font-family: Tahoma, Geneva, sans-serif;
+}
+.testtext{
+    display: flex;
+    flex-direction: row;
+}
+.testtext p{
+    width: 70%;
+    margin-right: 20px;
+}
+.testtext img{   
+    display:block;
+    margin:auto;
+}
 .site-footer {
     display: flex;
     height: 150px;
@@ -259,4 +274,18 @@ section {
         text-align: center;
     }
     
+}
+@media screen and (max-width: 1100px){
+    .testtext{
+        display: flex;
+        flex-direction: column;
+    }
+    .testtext p{
+        width: 100%;
+    }
+    .testtext img{
+        height: auto;
+        width: 100%;
+        max-width: 460px;
+    }
 }
