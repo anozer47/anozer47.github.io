@@ -1,4 +1,23 @@
 
+@font-face {
+    font-family: "Fester";  
+    src: url("../fonts/Fester-ExtraLight.otf") format("otf"); 
+    font-style: normal; 
+    font-weight: normal;
+    }
+@font-face {
+    font-family: "Mons-Sans";  
+    src: url("../fonts/Mona-Sans.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal;
+    }
+.test {
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+    font-size: 18px;
+}
+.headertext {
+    font-family: Verdana, Geneva, sans-serif;
+}
 .header-nav {
     background-color: #3e3f3e;
     text-align: center;
@@ -29,6 +48,15 @@
     display: flex;
     justify-content: right;
 }
+.phone {
+    font-family: "Mona-Sans", sans-serif;
+    font-size: 25px;
+}
+.mail {
+    font-family: "Mona-Sans", sans-serif;
+    font-size: 20px;
+    margin-top: 2px;
+}
 #nav li{
     font-weight: bold;
     display: inline-block;
@@ -38,7 +66,8 @@
     box-sizing: border-box;
     padding-right: 30px;
     padding-left: 30px;
-    font-family: Arial, Helvetica, sans-serif;}
+    font-family: Arial, Helvetica, sans-serif;
+}
 #nav a{
     text-decoration: none;
     color: aliceblue;
@@ -62,14 +91,17 @@ section {
     font-family: Arial, Helvetica, sans-serif;
 }
 .footer-left {
+    margin-top: 12px;
     width: 33.3333333%;
     margin-left: 10%;
 }
 .footer-center {
+    margin-top: 12px;
     width: 33.3333333%;
     text-align: center;
 }
 .footer-right {
+    margin-top: 12px;
     width: 33.3333333%;
     text-align: right;
     margin-right:  10%;
