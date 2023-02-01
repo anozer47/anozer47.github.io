@@ -109,6 +109,9 @@ section {
 .testtext img{   
     display:block;
     margin:auto;
+    border-radius:15px;
+    -moz-border-radius:15px;
+    -webkit-border-radius:15px;
 }
 .site-footer {
     display: flex;
