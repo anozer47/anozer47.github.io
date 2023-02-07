@@ -11,7 +11,16 @@
     font-style: normal; 
     font-weight: normal;
     }
-
+.wrapper {
+    background-image: url("aaa.jpg");
+    background-size: no-repeat;
+    background-attachment: fixed;
+}
+.wrapper :hover {
+    background-image: url("aaa2.jpg");
+    background-size: no-repeat;
+    background-attachment: fixed;
+}
 .worktime {
     font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
     font-size: 18px;
