@@ -62,6 +62,20 @@
   </div>
   <div>
     <!--О компании-->
+    <div class="gallery">
+      <ul id="slides">
+        <li class="slide showing"><img src="https://maxideza.com/wp-content/uploads/2018/10/cursos-sobre-certificacion-forestal-organizados-por-la-afg-1920.jpg">
+        </li>
+        <li class="slide"><img src="https://aecore.it/wp-content/uploads/2016/07/IMMAGINE_STOCKEXPRESS-ok.jpg">
+        </li>
+        <li class="slide"><img src="https://dispetcher-gruzoperevozok.biz/wp-content/uploads/2016/06/12279413435761020db59d77.84141885.jpg">
+        </li>
+        <li class="slide"><img src="https://dela.biz/wp-content/uploads/2016/05/57279f61a64b1.jpg">
+        </li>
+        <li class="slide"><img src="https://ingush.info/sites/default/files/styles/1920x1080/public/pubs-images/2021-03/46b8103246b8183456caa20d8fd09a13.jpg?h=b69f83ed&itok=vtCe51Ne">
+        </li>
+      </ul>
+    </div>
     <section class="section" id="about">
     <div class="section-about">
       <h2>О Компании</h2>
@@ -332,7 +346,7 @@
           <li class="adv"><i class="material-icons">calendar_month</i><a>Собственное производство с 1999 года</a></li>
           <li class="adv"><i class="material-icons">forest</i><a>Независимость от поставщиков пиломатериала</a></li>
           <li class="adv"><i class="material-icons">timer</i><a>Точное соблюдение сроков производства</a></li>
-          <li class="adv"><i class="material-icons">sell</i><a>Доступная цена</a></li>
+          <li class="adv"><i class="material-icons">sell</i><a>Доступные цены от производителя</a></li>
           <li class="adv"><i class="material-icons">forklift</i><a>Быстрая погрузка</a></li>
           <li class="adv"><i class="material-icons">eco</i><a>Экологически чистое производство</a>
         </ul>
@@ -375,5 +389,16 @@
     </div>
   </footer>
 </div>
+<script>
+  var slides = document.querySelectorAll('#slides .slide');
+  var currentSlide = 0;
+  var slideInterval = setInterval(nextSlide,3000);
+
+  function nextSlide(){
+	slides[currentSlide].className = 'slide';
+	currentSlide = (currentSlide+1)%slides.length;
+	slides[currentSlide].className = 'slide showing';
+  }
+</script>
 </body>
 </html>
