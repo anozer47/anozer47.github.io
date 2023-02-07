@@ -16,11 +16,6 @@
     background-size: no-repeat;
     background-attachment: fixed;
 }
-.wrapper :hover {
-    background-image: url("aaa2.jpg");
-    background-size: no-repeat;
-    background-attachment: fixed;
-}
 .worktime {
     font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
     font-size: 18px;
@@ -74,6 +69,7 @@
 .phone {
     font-family: "Mona-Sans", sans-serif;
     font-size: 25px;
+    margin-top:23px;
 }
 .menu {
     margin-bottom: 0;
