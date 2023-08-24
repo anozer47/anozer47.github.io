@@ -124,7 +124,8 @@ h3 {
 }
 .pil_img {
     width: 320;
-    height: 320;
+    height: 450;
+    image-orientation: from-image;
 }
 section {
     margin-right: 10%;
