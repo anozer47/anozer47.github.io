@@ -41,6 +41,13 @@
     text-align: center;
     margin-top: 15px;
 }
+.mail a{
+    font-size: 1.3em;
+    text-decoration: none;
+}
+.mail i {
+    font-size: 1.3em;
+}
 .time{
     line-height: 1.2;
     text-align: left;
@@ -64,11 +71,10 @@
 .phone {
     font-family: "Mona-Sans", sans-serif;
     font-size: 25px;
-    margin-top:23px;
 }
 .menu {
     margin-bottom: 0;
-    padding-left: 0;
+    padding: 0;
 }
 .navigation {
     margin-left: 10%;
@@ -79,33 +85,60 @@
 #nav ul {
     list-style-type: none;
     overflow: hidden;
+    height: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
 }
 #nav li{
     font-weight: bold;
     display: inline-block;
-    padding: 14px;
     font-size: 1.2rem;
     margin: 0;
     box-sizing: border-box;
-    padding-right: 30px;
-    padding-left: 30px;
     font-family: Arial, Helvetica, sans-serif;
     width: 25%;
+    
 }
-#nav a{
+#nav li a{
+    display: block;
     text-decoration: none;
     color: aliceblue;
-    outline: none
+    width: 100%;
+    height: 60px;
+    padding-top: 15px; /*понижаем кнопки в коризонтальном меню*/
 }
 #nav li:hover {
     background-color: #5e5f5f;
 }
+p {
+    word-wrap: break-word;
+}
 h2 {
     text-align: center;
+    padding-bottom: 15px;
+}
+h3 {
+    text-align: center;
+}
+.pil_img {
+    width: 320;
+    height: 320;
 }
 section {
     margin-right: 10%;
     margin-left: 10%;
+}
+section p {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.tab {
+    text-indent: 40px; /* класс для табуляции параграфа, <p class="tab">абзац с табуляцией</p> */
+}
+.section {
+    margin-bottom: 25px;
 }
 .section-products {
     font-family: Tahoma, Geneva, sans-serif;
@@ -116,17 +149,8 @@ section {
 .section-about p{
     font-family: Tahoma, Geneva, sans-serif;
 }
-.testtext{
-    display: flex;
-    flex-direction: row;
-    margin-top: 25px;
-}
-.testtext p{
-    padding: 15px;
-    border-radius: 15px;
-    box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.2);
-    /* border: 1px solid rgb(117, 117, 117);; */
-    background-color: rgb(219, 255, 210);
+.th-content {
+    font-weight: bold;
 }
 .testtext img{   
     display:block;
@@ -183,7 +207,7 @@ iframe {
     border-radius: 4px;
     border: 1px solid rgb(117, 117, 117);
     box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.2);
-    min-width: 320px;
+    min-width: 322px;
 }
 .th-content {
     display: flex;
@@ -206,9 +230,10 @@ iframe {
 .th-znach {
     flex-grow: 0;
     flex-shrink: 0;
-    width: 100px;
+    width: auto;
     padding-left: 5px;
     text-align: left;
+    padding-right: 7px;
 }
 .products :hover {
     border: 1px solid black;
@@ -264,7 +289,7 @@ iframe {
 }
 /*тест галлереи*/
 .gallery {
-    margin-top: 10px;
+    margin-top: 20px;
     margin-left: 10%;
     margin-right: 10%;
 }
@@ -316,13 +341,6 @@ iframe {
     }
     
 }
-@media screen and (max-width: 560px){
-    #advantages {
-        margin-left: auto;
-        margin-right: auto;
-        width: auto;
-    }
-}
 @media screen and (max-width: 760px){
     .site-footer {
         height: auto;
@@ -355,5 +373,29 @@ iframe {
         height: auto;
         width: 100%;
         max-width: 460px;
+    }
+}
+@media screen and (max-width: 1110px){
+    #nav li {
+        width: 50%;
+    }
+    
+    /* Добавляем новую строку */
+    #nav li:nth-child(odd) {
+        clear: both;
+    }
+}
+@media (max-width: 575px){
+    #advantages {
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+    }
+    #nav li {
+        display: block; /* Изменяем на вертикальный список */
+        clear: none; /* Удаляем clear */
+        margin: 0;
+        width: 100%;
+
     }
 }
