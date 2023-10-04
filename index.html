@@ -8,403 +8,256 @@
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="./fav.ico" type="image/x-icon">
   <link rel="shortcut icon" href="/fav.ico" type="image/x-icon" />
-   <!-- Bootstrap CSS (Cloudflare CDN) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/css/bootstrap.min.css" integrity="sha512-T584yQ/tdRR5QwOpfvDfVQUidzfgc2339Lc8uBDtcp/wYu80d7jwBgAxbyMh0a9YM9F8N3tdErpFI8iaGx6x5g==" crossorigin="anonymous" referrerpolicy="no-referrer">
-  <!-- jQuery (Cloudflare CDN) -->
-  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <!-- Bootstrap Bundle JS (Cloudflare CDN) -->
-  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.min.js" integrity="sha512-UR25UO94eTnCVwjbXozyeVd6ZqpaAE9naiEUBK/A+QDbfSTQFhPGj5lOR6d8tsgbBk84Ggb5A3EkjsOgPRPcKA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <!-- Bootstrap Font Icon CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <!--Google icons-->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-<div class="wrapper">
-  <!--Шапка-->
+<div class="background">
   <div class="header">
-    <div class="header-left">
-      <div class="logo">
-        <img src="/images/teh.png" title="логотип" height="160" width="230">
-      </div>
-    </div>
-    <div class="header-center">
-      <div class="header-worktime">
-        <div class="worktime"><p><b><i class="bi bi-clock"></i> Режим работы:</b></p></div>
-        <div class="headertext">
-          <p class="time">Пн-Пт: 8:00-18:00<br>Сб: 8:00-12:00<br>Вс: Выходной</p>
-          <span><p>Принимаем звонки 24/7</p></span>
+    <img src="teh 1.svg" class="logo" title="ТехПромТара">
+    <div class="right_side_header">
+      <div class="upper_header">
+        <div class="numbers">
+          <div class="number">+7(958)657-65-06</div>
+          <div class="number">+7(903)693-81-94</div>
+        </div>
+        <div class="social">
+          <img src="telegram.svg" class="telegram" title="Связаться с нами в Telegram">
+          <img src="whatsup.svg" class="telegram" title="Связаться с нами в WhatsApp">
+          <div class="mail">
+            <img src="letter.svg">
+            <div class="email">gkdsa62@mail.ru</div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="header-right">
-      <div class="messengers">
-        <div><a title="Whatsapp" href="whatsapp://send?phone=89586576506"><img src="images/WhatsApp.svg" height="35px" alt="Whatsapp" title="Whatsapp"/></a></div>
-        <div><a title="Whatsapp" href="viber://chat?number=89586576506"><img src="images/Viber.svg" height="35px" alt="Viber" title="Viber"></a></div>
-        <div><a title="Telegram" href="https://telegram.me/pilomaster62" target="_blank"><img src="images/Telegram.svg" height="35px" alt="Telegram" title="Telegram"/></a></div>
+      <div id="nav" class="navigation">
+        <div id="menu1" class="menu"><a href="#about">О компании</a></div>
+        <div id="menu2" class="menu"><a href="#pallets">Товары и услуги</a></div>
+        <div id="menu3" class="menu"><a href="#advantages">Почему мы?</a></div>
+        <div id="menu4" class="menu"><a href="#contacts">Контакты</a></div>
       </div>
-      <div class="header-contacts">
-        <div class="mail"><p><i class="bi bi-envelope"></i> <a href="mailto:gkdsa62@mail.ru">gkdsa62@mail.ru</a></p></div>
-        <div class="phone"><p>8(958)657-65-06<br>8(903)693-81-94</p></div>
-      </div>
-      
     </div>
   </div>
-  <!--Навигация-->
-  <div class="header-nav">
-    <div class="navigation">
-      <ul id="nav" class="menu">
-        <li id="menu1" class="menu"><a href="#about">О компании</a></li>
-        <li id="menu2" class="menu"><a href="#products">Товары и услуги</a></li>
-        <li id="menu3" class="menu"><a href="#advantages">Почему мы?</a></li>
-        <li id="menu4" class="menu"><a href="#contacts">Контакты</a></li>
-      </ul>
+  <div class="line"></div>
+  <div class="slider">
+      <div class="slider_frame"></div>
+  </div>
+  <div class="line"></div>
+  <div id="about" class="block">
+    <div class="head">
+      <div class="head_up"><a>О компании</a></div>
+      <div class="head_under" style="background-color: #009245; width: 145px; height: 5px;"></div>
+    </div>
+    <div class="text"><a>Наша компания занимается лесопилением и производством поддонов, имеет обширную инфраструктуру, включающую три лесопильных участка и два сборочных цеха. На лесопильных участках происходит первичная обработка древесины, ее раскрой на необходимые размеры и приготовление заготовок для производства поддонов. Далее, заготовки доставляются в сборочные цеха, где происходит сборка деревянных поддонов. После сборки, готовая продукция проходит контроль качества, после чего отправляется на открытый или закрытый склад готовой продукции. Компания производит примерно 15000 поддонов в месяц, что является впечатляющим объемом производства. Благодаря своей продуктивности и опыту, компания способна удовлетворять потребности клиентов в различных отраслях промышленности и логистики.</a></div>
+  </div>
+  <div class="line"></div>
+  <div id="products" class="block">
+    <div class="head">
+      <div class="head_up"><a>Наша продукция</a></div>
+      <div class="head_under" style="background-color: #009245; width: 206px; height: 5px;"></div>
+    </div>
+    <div class="text"><a>Деревянные поддоны (паллеты) являются одним из наиболее распространенных и важных компонентов в современной логистике и хранении. Они широко используются во всех отраслях экономики, включая производство, транспортировку и хранение товаров. Одной из ключевых ролей, которую играют деревянные поддоны, является обеспечение безопасности и сохранности груза. Поддоны позволяют защитить товары от повреждений, таких как царапины, удары и деформации, а также обеспечивают правильное распределение веса и балансировку груза при транспортировке. Кроме того, использование деревянных поддонов обеспечивает эффективное использование пространства склада и транспортных средств. Так как поддоны обычно имеют стандартный размер и форму, они могут быть легко уложены и упакованы вместе с другими поддонами, что значительно экономит место в хранилище и на транспорте. Это позволяет сократить расходы на транспортировку и хранение товаров, что является важным фактором в современном бизнесе. Деревянные поддоны являются экологически безопасными и устойчивыми к использованию. Они могут быть легко переработаны и восстановлены, что делает их идеальным вариантом для организаций, которые заботятся о снижении своего экологического следа. Наконец, использование деревянных поддонов является экономически выгодным решением для организаций. Они являются более доступным и дешевым вариантом по сравнению с поддонами из других материалов, таких как пластик или металл. Это позволяет организациям снизить свои затраты на логистику и хранение товаров, что, в свою очередь, может привести к более конкурентоспособным ценам на товары и услуги.</a></div>
+  </div>
+  <div class="line"></div>
+  <div id="pallets" class="block">
+    <div class="head">
+      <div class="head_up"><a>Поддоны</a></div>
+      <div class="head_under" style="background-color: #009245; width: 113px; height: 5px;"></div>
+    </div>
+    <div class="text"><a>Наша компания предлагает широкий ассортимент поддонов, которые отвечают требованиям самых разных отраслей промышленности и логистики. Перечень продукции включает в себя поддоны разных видов и качества, чтобы соответствовать различным бюджетам и потребностям наших клиентов.</a></div>
+    <div class="pallet_price">
+      <div class="price_card">
+        <div class="card_title">Поддон 800x1200/1 сорт</div>
+        <img src="images/800-1200-1.png">
+        <div class="card_discription">
+          <div class="discription_left">
+            <div>Размер:</div>
+            <div>Сорт:</div>
+            <div>Цена:</div>
+          </div>
+          <div class="discription_right">
+            <div>800 x 1200</div>
+            <div>Первый</div>
+            <div class="green_price"><a>от 450 р</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="price_card">
+        <div class="card_title">Поддон 800x1200/2 сорт</div>
+        <img src="images/800-1200-2.png">
+        <div class="card_discription">
+          <div class="discription_left">
+            <div>Размер:</div>
+            <div>Сорт:</div>
+            <div>Цена:</div>
+          </div>
+          <div class="discription_right">
+            <div>800 x 1200</div>
+            <div>Второй</div>
+            <div class="green_price"><a>от 400 р</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="price_card">
+        <div class="card_title">Поддон 800x1200/3 сорт</div>
+        <img src="images/800-1200-3.png">
+        <div class="card_discription">
+          <div class="discription_left">
+            <div>Размер:</div>
+            <div>Сорт:</div>
+            <div>Цена:</div>
+          </div>
+          <div class="discription_right">
+            <div>800 x 1200</div>
+            <div>Третий</div>
+            <div class="green_price"><a>от 350 р</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="price_card">
+        <div class="card_title">Поддон 1000x1200/1 сорт</div>
+        <img src="images/1000-1200-1.png">
+        <div class="card_discription">
+          <div class="discription_left">
+            <div>Размер:</div>
+            <div>Сорт:</div>
+            <div>Цена:</div>
+          </div>
+          <div class="discription_right">
+            <div>1000 x 1200</div>
+            <div>Первый</div>
+            <div class="green_price"><a>от 450 р</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="price_card">
+        <div class="card_title">Поддон 1000x1200/2 сорт</div>
+        <img src="images/1000-1200-2.png">
+        <div class="card_discription">
+          <div class="discription_left">
+            <div>Размер:</div>
+            <div>Сорт:</div>
+            <div>Цена:</div>
+          </div>
+          <div class="discription_right">
+            <div>1000 x 1200</div>
+            <div>Второй</div>
+            <div class="green_price"><a>от 400 р</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="price_card">
+        <div class="card_title">Поддон 1000x1200/3 сорт</div>
+        <img src="images/1000-1200-3.png">
+        <div class="card_discription">
+          <div class="discription_left">
+            <div>Размер:</div>
+            <div>Сорт:</div>
+            <div>Цена:</div>
+          </div>
+          <div class="discription_right">
+            <div>1000 x 1200</div>
+            <div>Третий</div>
+            <div class="green_price"><a>от 350 р</a></div>
+          </div>
+        </div>
+      </div>
+  </div>
+  <div class="line"></div>
+  <div id="wood" class="block">
+    <div class="head">
+      <div class="head_up"><a>Пиломатериалы</a></div>
+      <div class="head_under" style="background-color: #009245; width: 198px; height: 5px;"></div>
+    </div>
+    <div class="text"><a>Мы предлагаем пиломатериалы различных пород и размеров, произведенные на нашем собственном производстве. Наши материалы прочны, долговечны и устойчивы к внешним воздействиям, благодаря чему, используется в различных отраслях промышленности и строительства, таких как производство мебели, строительство домов и сооружений, а также в производстве поддонов и упаковки.</a></div>
+    <div class="pallet_price">
+      <div class="wood_price_card">
+        <div class="card_title">Поддон 800x1200/1 сорт</div>
+        <img src="images/wood1.png">
+        <div class="card_discription">
+          <div class="discription_left">
+            <div>Размер:</div>
+            <div>Сорт:</div>
+            <div>Цена:</div>
+          </div>
+          <div class="discription_right">
+            <div>6 м</div>
+            <div>Первый</div>
+            <div class="green_price"><a>от 13050 р за м&sup2;</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="wood_price_card">
+        <div class="card_title">Поддон 800x1200/2 сорт</div>
+        <img src="images/wood2.png">
+        <div class="card_discription">
+          <div class="discription_left">
+            <div>Размер:</div>
+            <div>Сорт:</div>
+            <div>Цена:</div>
+          </div>
+          <div class="discription_right">
+            <div>6 м</div>
+            <div>Второй</div>
+            <div class="green_price"><a>от 10050 р за м&sup2;</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="wood_price_card">
+        <div class="card_title">Поддон 800x1200/3 сорт</div>
+        <img src="images/wood3.png">
+        <div class="card_discription">
+          <div class="discription_left">
+            <div>Размер:</div>
+            <div>Сорт:</div>
+            <div>Цена:</div>
+          </div>
+          <div class="discription_right">
+            <div>800 x 1200</div>
+            <div>Третий</div>
+            <div class="green_price"><a>от 350 р</a></div>
+          </div>
+        </div>
+      </div>
+  </div>
+  <div class="line"></div>
+  <div id="advantages" class="why">
+    <div class="head">
+      <div class="head_up"><a>Наши преимущества</a></div>
+      <div class="head_under" style="background-color: #009245; width: 257px; height: 5px;"></div>
+    </div>
+    <div class="advantages">
+      <div class="horizon">
+        <img class="adv_icons" src="images/calendar.svg">
+        <div class="adv_text">Собственное производство с 1999 года</div>
+      </div>
+      <div class="horizon">
+        <img class="adv_icons" src="images/tree.svg">
+        <div class="adv_text">Независимость от поставщиков пиломатериала</div>
+      </div>
+      <div class="horizon">
+        <img class="adv_icons" src="images/timer.svg">
+        <div class="adv_text">Точное соблюдение сроков производства</div>
+      </div>
+      <div class="horizon">
+        <img class="adv_icons" src="images/price.svg">
+        <div class="adv_text">Доступные цены от производителя</div>
+      </div>
+      <div class="horizon">
+        <img class="adv_icons" src="images/forklift.svg">
+        <div class="adv_text">Быстрая погрузка</div>
+      </div>
+      <div class="horizon">
+        <img class="adv_icons" src="images/tree.svg">
+        <div class="adv_text">Экологически чистое производство</div>
+      </div>
     </div>
   </div>
-    <!--О компании-->
-    
-    <div class="gallery">
-      <ul id="slides">
-        <li class="slide showing"><img src="images/slide11.jpg">
-        </li>
-        <li class="slide"><img src="images/slide22.jpg">
-        </li>
-        <li class="slide"><img src="images/slide44.png">
-        </li>
-        <li class="slide"><img src="images/slide55.jpg">
-        </li>
-        <li class="slide"><img src="images/slide33.jpg">
-        </li>
-      </ul>
-    </div>
-    <section class="section" id="about">
-    <div class="section-about">
-      <h2>О Компании</h2>
-      <div class="testtext">
-      <p class="tab">Наша компания занимается лесопилением и производством поддонов, имеет обширную инфраструктуру, включающую три лесопильных участка и два сборочных цеха. На лесопильных участках происходит первичная обработка древесины, ее раскрой на необходимые размеры и приготовление заготовок для производства поддонов.
-
-        Далее, заготовки доставляются в сборочные цеха, где происходит сборка деревянных поддонов. После сборки, готовая продукция проходит контроль качества, после чего отправляется на открытый или закрытый склад готовой продукции.
-        
-        Компания производит примерно 15000 поддонов в месяц, что является впечатляющим объемом производства. Благодаря своей продуктивности и опыту, компания способна удовлетворять потребности клиентов в различных отраслях промышленности и логистики.</p>
-      </div>
-    </div>
-    </section>
-    <!--Описание продукции-->
-    <section class="section" id="products">
-      <div class="section-products">
-        <h2>Наша продукция</h2>
-        <p class="tab">
-          <b>Деревянные поддоны (паллеты)</b> являются одним из наиболее распространенных и важных компонентов в современной логистике и хранении. Они широко используются во всех отраслях экономики, включая производство, транспортировку и хранение товаров.
-
-          Одной из ключевых ролей, которую играют деревянные поддоны, является обеспечение безопасности и сохранности груза. Поддоны позволяют защитить товары от повреждений, таких как царапины, удары и деформации, а также обеспечивают правильное распределение веса и балансировку груза при транспортировке.
-          
-          Кроме того, использование деревянных поддонов обеспечивает эффективное использование пространства склада и транспортных средств. Так как поддоны обычно имеют стандартный размер и форму, они могут быть легко уложены и упакованы вместе с другими поддонами, что значительно экономит место в хранилище и на транспорте. Это позволяет сократить расходы на транспортировку и хранение товаров, что является важным фактором в современном бизнесе.
-          
-          Деревянные поддоны являются экологически безопасными и устойчивыми к использованию. Они могут быть легко переработаны и восстановлены, что делает их идеальным вариантом для организаций, которые заботятся о снижении своего экологического следа.
-          
-          Наконец, использование деревянных поддонов является экономически выгодным решением для организаций. Они являются более доступным и дешевым вариантом по сравнению с поддонами из других материалов, таких как пластик или металл. Это позволяет организациям снизить свои затраты на логистику и хранение товаров, что, в свою очередь, может привести к более конкурентоспособным ценам на товары и услуги.
-        </p><br>
-        <h3>Поддоны</h3>
-          <p class="tab">
-          Наша компания предлагает широкий ассортимент поддонов, которые отвечают требованиям самых разных отраслей промышленности и логистики. Перечень продукции включает в себя поддоны разных видов и качества, чтобы соответствовать различным бюджетам и потребностям наших клиентов.
-          </p>
-      </div>
-    </section>
-    <!--Витрина поддонов-->
-    <div class="products">
-      <div class="prod-container">
-        <h5 class="type_title">Новый поддон 800х1200 (1 сорт)</h5>
-        <img src="/images/800x1200i.png" alt="Паллеты 1200х800" class="poddon_img" width="320" height="240">
-        <!--ТХ поддонов-->
-        <div class="th-poddon">
-          <div class="th-content">
-            <div class="th-name">Длина</div>
-            <div class="th-dotted">&nbsp;</div>
-            <div class="th-znach">1200 мм</div>
-          </div>
-          <div class="th-content">
-            <div class="th-name">Ширина</div>
-            <div class="th-dotted">&nbsp;</div>
-            <div class="th-znach">800 мм</div>
-          </div>
-          <div class="th-content">
-            <div class="th-name">Сорт</div>
-            <div class="th-dotted">&nbsp;</div>
-            <div class="th-znach">1</div>
-          </div>
-          <div class="th-content">
-            <div class="th-name">Цена</div>
-            <div class="th-dotted">&nbsp;</div>
-            <div class="th-znach"><b>от 400р</b></div>
-          </div>
-        </div>
-      </div>
-      <div class="prod-container">
-        <h5 class="type_title">Новый поддон 800х1200 (2 сорт)</h5>
-        <img src="images/800x1200ii.jpg" alt="Паллеты 1200х800" class="poddon_img" width="320" height="240">
-        <!--ТХ поддонов-->
-        <div class="th-poddon">
-          <div class="th-content">
-            <div class="th-name">Длина</div>
-            <div class="th-dotted">&nbsp;</div>
-            <div class="th-znach">1200 мм</div>
-          </div>
-          <div class="th-content">
-            <div class="th-name">Ширина</div>
-            <div class="th-dotted">&nbsp;</div>
-            <div class="th-znach">800 мм</div>
-          </div>
-          <div class="th-content">
-            <div class="th-name">Сорт</div>
-            <div class="th-dotted">&nbsp;</div>
-            <div class="th-znach">2</div>
-          </div>
-          <div class="th-content">
-            <div class="th-name">Цена</div>
-            <div class="th-dotted">&nbsp;</div>
-            <div class="th-znach"><b>от 400р</b></div>
-          </div>
-        </div>
-      </div>
-      <div class="prod-container">
-        <h5 class="type_title">Новый поддон 800х1200 (3 сорт)</h5>
-        <img src="/images/800x1200iii.jpg" alt="Паллеты 1200х800" class="poddon_img" width="320" height="240">
-        <!--ТХ поддонов-->
-        <div class="th-poddon">
-          <div class="th-content">
-            <div class="th-name">Длина</div>
-            <div class="th-dotted">&nbsp;</div>
-            <div class="th-znach">1200 мм</div>
-          </div>
-          <div class="th-content">
-            <div class="th-name">Ширина</div>
-            <div class="th-dotted">&nbsp;</div>
-            <div class="th-znach">800 мм</div>
-          </div>
-          <div class="th-content">
-            <div class="th-name">Сорт</div>
-            <div class="th-dotted">&nbsp;</div>
-            <div class="th-znach">3</div>
-          </div>
-          <div class="th-content">
-            <div class="th-name">Цена</div>
-            <div class="th-dotted">&nbsp;</div>
-            <div class="th-znach"><b>от 400р</b></div>
-          </div>
-        </div>
-      </div>
-      <div class="prod-container">
-        <h5 class="type_title">Новый поддон 1000х1200 (1 сорт)</h5>
-        <img src="images/1000x1200i.jpg" alt="Паллеты 1200х800" class="poddon_img" width="320" height="240">
-        <!--ТХ поддонов-->
-        <div class="th-poddon">
-          <div class="th-content">
-            <div class="th-name">Длина</div>
-            <div class="th-dotted">&nbsp;</div>
-            <div class="th-znach">1200 мм</div>
-          </div>
-          <div class="th-content">
-            <div class="th-name">Ширина</div>
-            <div class="th-dotted">&nbsp;</div>
-            <div class="th-znach">800 мм</div>
-          </div>
-          <div class="th-content">
-            <div class="th-name">Сорт</div>
-            <div class="th-dotted">&nbsp;</div>
-            <div class="th-znach">1</div>
-          </div>
-          <div class="th-content">
-            <div class="th-name">Цена</div>
-            <div class="th-dotted">&nbsp;</div>
-            <div class="th-znach"><b>от 400р</b></div>
-          </div>
-        </div>
-      </div>
-      <div class="prod-container">
-        <h5 class="type_title">Новый поддон 1000х1200 (2 сорт)</h5>
-        <img src="images/1000x1200ii.jpg" alt="Паллеты 1200х800" class="poddon_img" width="320" height="240">
-        <!--ТХ поддонов-->
-        <div class="th-poddon">
-          <div class="th-content">
-            <div class="th-name">Длина</div>
-            <div class="th-dotted">&nbsp;</div>
-            <div class="th-znach">1200 мм</div>
-          </div>
-          <div class="th-content">
-            <div class="th-name">Ширина</div>
-            <div class="th-dotted">&nbsp;</div>
-            <div class="th-znach">800 мм</div>
-          </div>
-          <div class="th-content">
-            <div class="th-name">Сорт</div>
-            <div class="th-dotted">&nbsp;</div>
-            <div class="th-znach">2</div>
-          </div>
-          <div class="th-content">
-            <div class="th-name">Цена</div>
-            <div class="th-dotted">&nbsp;</div>
-            <div class="th-znach"><b>от 400р</b></div>
-          </div>
-        </div>
-      </div>
-      <div class="prod-container">
-        <h5 class="type_title">Новый поддон 1000х1200 (3 сорт)</h5>
-        <img src="images/1000x1200iii.jpg" alt="Паллеты 1200х800" class="poddon_img" width="320" height="240">
-        <!--ТХ поддонов-->
-        <div class="th-poddon">
-          <div class="th-content">
-            <div class="th-name">Длина</div>
-            <div class="th-dotted">&nbsp;</div>
-            <div class="th-znach">1200 мм</div>
-          </div>
-          <div class="th-content">
-            <div class="th-name">Ширина</div>
-            <div class="th-dotted">&nbsp;</div>
-            <div class="th-znach">800 мм</div>
-          </div>
-          <div class="th-content">
-            <div class="th-name">Сорт</div>
-            <div class="th-dotted">&nbsp;</div>
-            <div class="th-znach">3</div>
-          </div>
-          <div class="th-content">
-            <div class="th-name">Цена</div>
-            <div class="th-dotted">&nbsp;</div>
-            <div class="th-znach"><b>от 400р</b></div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <section class="section" id="products">
-      <div class="section-products">
-        <h3>Пиломатериал</h3>
-          <p class="tab">
-            Мы предлагаем пиломатериалы различных пород и размеров, произведенные на нашем собственном производстве. Наши материалы прочны, долговечны и устойчивы к внешним воздействиям, благодаря чему, используется в различных отраслях промышленности и строительства, таких как производство мебели, строительство домов и сооружений, а также в производстве поддонов и упаковки.
-          </p>
-      </div>
-    </section>
-    <!--Витрина пиломатериалов-->
-    <div class="products">
-      <div class="prod-container">
-        <h5 class="type_title">Пиломатериал 1 сорт</h5>
-        <img src="/images/pil1.jpg" alt="Паллеты 1200х800" class="pil_img" width="320" height="450">
-        <!--ТХ поддонов-->
-        <div class="th-poddon">
-          <div class="th-content">
-            <div class="th-name">Длина</div>
-            <div class="th-dotted">&nbsp;</div>
-            <div class="th-znach">6 м</div>
-          </div>
-          <div class="th-content">
-            <div class="th-name">Сорт</div>
-            <div class="th-dotted">&nbsp;</div>
-            <div class="th-znach">1</div>
-          </div>
-          <div class="th-content">
-            <div class="th-name">Цена</div>
-            <div class="th-dotted">&nbsp;</div>
-            <div class="th-znach"><b>от 400р</b></div>
-          </div>
-        </div>
-      </div>
-      <div class="prod-container">
-        <h5 class="type_title">Пиломатериал 2 сорт</h5>
-        <img src="/images/pil2.jpg" alt="Паллеты 1200х800" class="pil_img" width="320" height="450">
-        <!--ТХ поддонов-->
-        <div class="th-poddon">
-          <div class="th-content">
-            <div class="th-name">Длина</div>
-            <div class="th-dotted">&nbsp;</div>
-            <div class="th-znach">6 м</div>
-          </div>
-          <div class="th-content">
-            <div class="th-name">Сорт</div>
-            <div class="th-dotted">&nbsp;</div>
-            <div class="th-znach">2</div>
-          </div>
-          <div class="th-content">
-            <div class="th-name">Цена</div>
-            <div class="th-dotted">&nbsp;</div>
-            <div class="th-znach"><b>от 400р</b></div>
-          </div>
-        </div>
-      </div>
-      <div class="prod-container">
-        <h5 class="type_title">Тараная заготовка 1-2 сорт</h5>
-        <img src="images/tar1-2.jpg" alt="Паллеты 1200х800" class="poddon_img" width="320" height="450">
-        <!--ТХ поддонов-->
-        <div class="th-poddon">
-          <div class="th-content">
-            <div class="th-name">Длина</div>
-            <div class="th-dotted">&nbsp;</div>
-            <div class="th-znach">800/1000/1200 мм</div>
-          </div>
-          <div class="th-content">
-            <div class="th-name">Сорт</div>
-            <div class="th-dotted">&nbsp;</div>
-            <div class="th-znach">1-2</div>
-          </div>
-          <div class="th-content">
-            <div class="th-name">Цена</div>
-            <div class="th-dotted">&nbsp;</div>
-            <div class="th-znach"><b>от 400р</b></div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--Приемущества-->
-    <section class="section" id="advantages">
-      <div class="section-about">
-        <h2>Почему именно мы?</h2>
-        <ul class="adv-menu">
-          <li class="adv"><i class="material-icons">calendar_month</i><a>Собственное производство с 1999 года</a></li>
-          <li class="adv"><i class="material-icons">forest</i><a>Независимость от поставщиков пиломатериала</a></li>
-          <li class="adv"><i class="material-icons">timer</i><a>Точное соблюдение сроков производства</a></li>
-          <li class="adv"><i class="material-icons">sell</i><a>Доступные цены от производителя</a></li>
-          <li class="adv"><i class="material-icons">forklift</i><a>Быстрая погрузка</a></li>
-          <li class="adv"><i class="material-icons">eco</i><a>Экологически чистое производство</a>
-        </ul>
-      </div>
-      </section>
-    <!--Контакты-->
-    <section class="section" id="contacts">
-      <div class="section-contacts">
-        <h2>Контакты</h2>
-        <div>
-        <p>Адрес:<br>Россия, Турлатовское сельское поселение, Рязанский район, автодорога Рязань - Пронск, 12-й километр</p>
-        <p>Тел:<br>+7(958)657-65-06<br>+7(903)693-81-94</p>
-        <p>E-mail:<br>gkdsa62@mail.ru</p>
-        </div>
-    </section>
-    <section class="section" id="maps">
-      <div class="section-maps">
-        <h2><i class="bi bi-geo-alt-fill" style="color: rgb(221, 38, 38)"></i>  Мы на карте</h2>
-        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Afe0f3105429ec8e43e9dc2660cd16206e3d9e491615cb8f1de83e3d00730caec&amp;source=constructor" frameborder="0" allowfullscreen="true" width="100%" height="500px" style="display: block;"></iframe>
-      </div>
-    </section>
-  <!--FOOTER-->
-  <footer class="site-footer">
-    <div class="footer-left">
-      <div class="footer-adress">
-        <p><b>Адрес:</b></p>
-        <p>Россия, Турлатовское сельское поселение, Рязанский район, автодорога Рязань - Пронск, 12-й километр</p>
-      </div>
-    </div>
-    <div class="footer-center">
-      <div class="header-worktime">
-        <p><b>Режим работы:</b></p>
-        <p class="footertime">Пн-Пт: 8:00-18:00<br>Сб: 8:00-12:00<br>Вс: Выходной</p>
-      </div>
-    </div>
-    <div class="footer-right">
-      <div class="footer-contacts">
-        <p><b>Контакты:</b></p>
-        <p>gkdsa62@mail.ru<br>8(958)657-65-06<br>8(903)693-81-94<p>
-      </div>
-    </div>
-  </footer>
+  <div class="line"></div>
+  <div class="contacts"></div>
+  <div class="map"></div>
+  <div class="footer"></div>
 </div>
 <script>
   var slides = document.querySelectorAll('#slides .slide');
@@ -416,6 +269,20 @@
 	currentSlide = (currentSlide+1)%slides.length;
 	slides[currentSlide].className = 'slide showing';
   }
+</script>
+<script>
+  window.addEventListener('scroll', function() {
+    var scrollButton = document.getElementById('scroll-to-top');
+    if (document.documentElement.scrollTop > 100) {
+        scrollButton.style.display = 'block';
+    } else {
+        scrollButton.style.display = 'none';
+    }
+});
+
+document.getElementById('scroll-to-top').addEventListener('click', function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});
 </script>
 </body>
 </html>
