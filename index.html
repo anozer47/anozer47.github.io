@@ -23,11 +23,11 @@
           <div class="number">+7(903)693-81-94</div>
         </div>
         <div class="social">
-          <img src="telegram.svg" class="telegram" title="Связаться с нами в Telegram">
-          <img src="whatsup.svg" class="telegram" title="Связаться с нами в WhatsApp">
+          <a title="Telegram" href="https://telegram.me/pilomaster62" target="_blank""><img src="telegram.svg" class="telegram" title="Связаться с нами в Telegram"></a>
+          <a title="Whatsapp" href="whatsapp://send?phone=89586576506"><img src="whatsup.svg" class="telegram" title="Связаться с нами в WhatsApp"></a>
           <div class="mail">
             <img src="letter.svg">
-            <div class="email">gkdsa62@mail.ru</div>
+            <div class="email" title="Написать нам на почту"><a href="mailto:gkdsa62@mail.ru">gkdsa62@mail.ru</a></div>
           </div>
         </div>
       </div>
@@ -43,17 +43,19 @@
   <div class="slider">
       <div class="slider_frame">
         <ul id="slides">
-          <li class="slide showing"><img src="images/slide11.jpg">
-          </li>
-          <li class="slide"><img src="images/slide22.jpg">
-          </li>
-          <li class="slide"><img src="images/slide44.png">
-          </li>
-          <li class="slide"><img src="images/slide55.jpg">
-          </li>
-          <li class="slide"><img src="images/slide33.jpg">
-          </li>
+          <li class="slide showing"><img src="images/slide11.jpg" alt="Слайд 1"></li>
+          <li class="slide"><img src="images/slide22.jpg" alt="Слайд 2"></li>
+          <li class="slide"><img src="images/slide44.png" alt="Слайд 3"></li>
+          <li class="slide"><img src="images/slide55.jpg" alt="Слайд 4"></li>
+          <li class="slide"><img src="images/slide33.jpg" alt="Слайд 5"></li>
         </ul>
+      </div>
+      <div class="slider-dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
       </div>
   </div>
   <div class="line"></div>
@@ -66,7 +68,7 @@
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;На лесопильных участках мы проводим первичную обработку древесины, выполняем раскрой на необходимые размеры и готовим заготовки для производства поддонов. Эти заготовки тщательно проверяются на соответствие стандартам качества, прежде чем отправить их в сборочные цеха.<br><br>
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;В сборочных цехах происходит сборка деревянных поддонов. Этот этап важен, так как деревянные поддоны играют ключевую роль в логистике и хранении товаров. Они обеспечивают безопасность и сохранность груза, защищая его от повреждений, а также помогают правильно распределить вес и балансировать груз при транспортировке.<br><br>
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;После сборки готовая продукция проходит строгий контроль качества, гарантируя, что наши поддоны соответствуют высоким стандартам. Затем они отправляются на открытые и закрытые склады, где ожидают своего использования.<br><br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Мы производим впечатляющий объем поддонов, достигая около 15 000 штук в месяц. Благодаря нашей продуктивности и опыту, мы можем удовлетворить потребности клиентов в различных отраслях промышленности и логистики.<br><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Мы производим впечатляющий объем поддонов, достигая около 15 000 шт в месяц. Благодаря нашей продуктивности и опыту, мы можем удовлетворить потребности клиентов в различных отраслях промышленности и логистики.<br><br>
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Деревянные поддоны обладают множеством преимуществ. Они экологически безопасны и устойчивы к использованию, так как могут быть легко переработаны и восстановлены. Кроме того, они экономически выгодны, предоставляя организациям доступное решение для логистики и хранения товаров. Их стандартный размер и форма также способствуют эффективному использованию пространства на складе и в транспорте, что позволяет снизить расходы и улучшить конкурентоспособность продукции и услуг.<br><br>
       </a></div>
   </div>
@@ -322,11 +324,17 @@
   var slides = document.querySelectorAll('#slides .slide');
   var currentSlide = 0;
   var slideInterval = setInterval(nextSlide,3000);
+  var dots = document.querySelectorAll('.slider-dots .dot');
+  var currentDot = 0;
 
   function nextSlide(){
 	slides[currentSlide].className = 'slide';
 	currentSlide = (currentSlide+1)%slides.length;
 	slides[currentSlide].className = 'slide showing';
+  dots[currentDot].className = 'dot';
+	currentDot = (currentDot+1)%dots.length;
+	dots[currentDot].className = 'dot active';
+
   }
 </script>
 <script>
