@@ -8,7 +8,7 @@ html, body {
 
 .background {
     margin-top: 0px;
-    width: 1280px;
+    width: 100%;
     height: auto;
     background: rgb(255, 255, 255);
     position: absolute;
@@ -23,13 +23,12 @@ html, body {
     background: rgb(255, 255, 255);
     display: flex;
     flex-direction: row;
-  }
-  
+}
 .slider {
-    width: 1120px;
-    height: 590px;
+    max-width: 1120px;
+    height: max-content;
     background: rgb(255, 255, 255);
-  }
+}
 .right_side_header {
     width: 870px;
     height: 160px;
@@ -146,11 +145,16 @@ html, body {
 }
 .slider {
     width: 100%;
-    height: 590px;
     /* background-color: rgb(199, 247, 188); */
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    list-style-type: none;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    padding: 0px;
+    margin: 0px;
 }
 .slider_frame {
     height: 540px;
@@ -187,12 +191,13 @@ html, body {
 }
 .pallet_price {
     display: flex;
-    width: 1120px;
+    width: auto;
     align-items: flex-start;
     align-content: flex-start;
     gap: 45px 80px;
     flex-wrap: wrap;
     margin-bottom: 50px;
+    justify-content: center;
 }
 .block {
     display: flex;
@@ -306,7 +311,7 @@ html, body {
     width: 1120px;
     height: 628px;
     border-radius: 10px;
-    border: 1px solid #000;
+    border: 1px solid #008e1a;
     margin-bottom: 50px;
 }
 .map img {
@@ -361,12 +366,13 @@ html, body {
     bottom: 20px;
     right: 20px;
     display: none;
+    z-index: 4;
 }
 #slides {
     position: relative;
     list-style-type: none;
     height: 100%;
-    /* aspect-ratio: 16 / 9; */
+    aspect-ratio: 16 / 9;
     padding: 0px;
     margin: 0px;
 }
@@ -397,6 +403,7 @@ html, body {
 }
 .slider_frame {
     position: absolute;
+    height: auto;
 }
   
 .slider-dots {
@@ -406,13 +413,13 @@ html, body {
     left: 0;
     right: 0;
     z-index: 3;
-    top: 42%;
+    top: 35%;
 }
   
 .dot {
     height: 10px;
     width: 10px;
-    background-color: #b0b0b0; /* Цвет неактивных точек */
+    background-color: #b0b0b07d; /* Цвет неактивных точек */
     border-radius: 50%;
     display: inline-block;
     margin: 0 5px; /* Расстояние между точками */
@@ -420,5 +427,120 @@ html, body {
 }
   
 .dot.active {
-    background-color: #009245; /* Зеленый цвет активной точки */
+    background-color: #01b6559f; /* Зеленый цвет активной точки */
+}
+
+@media screen and (max-width: 1150px){
+    .logo {
+        width: 500px;
+        height: 320px;
+    }
+    .upper_header,
+    .header{
+        height: max-content;
+        width: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .social {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .right_side_header {
+        height: auto;
+    }
+    .line {
+        width: 80%;
+    }
+    .slider_frame {
+        width: 80%;
+        height: auto;
+    }
+    .text {
+        width: 80%;
+    }
+    .footer_logo {
+        display: none;
+    }
+    .footer_frame {
+        gap: 0;
+    }
+    .map {
+        width: 80%;
+    }
+    .map iframe {
+        width: 100%;
+    }
+
+}
+@media screen and (max-width: 870px){
+    .navigation {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+    .social {
+        margin-bottom: 20px;
+    }
+    .text {
+        width: 100%;
+    }
+    #advantages {
+        width: 70%;
+    }
+    .footer_right {
+        width: auto;
+    }
+    .contacts {
+        width: 80%;
+    }
+    .header {
+        width: 80%;
+    }
+    .slider {
+        width: 80%;
+    }
+    .block {
+        width: 80%;
+    }
+    .footer {
+        width: 80%;
+    }
+    .right_side_header {
+        width: 80%;
+        align-items: center;
+    }
+    .navigation {
+        width: 80%;
+    }
+
+}
+@media screen and (max-width: 600px){
+    .logo {
+        width: 250px;
+        height: 160px;
+    }
+    .numbers {
+        flex-direction: column;
+        row-gap: 10px;
+        margin-bottom: 20px;
+    }
+    .social {
+        margin-bottom: 20px;
+    }
+    /* .footer_frame {
+        flex-direction: column;
+    } */
+    .footer {
+        height: max-content;
+    }
+    .footer_left {
+        width: auto;
+    }
+    .footer_frame {
+        gap: 10px;
+    }
 }
